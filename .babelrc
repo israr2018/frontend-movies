@@ -1,0 +1,39 @@
+// {
+//   "presets": ["next/babel"],
+//   "plugins": [
+//     [
+//       "import",
+//       {
+//         "libraryName": "antd",
+//         "style": true
+//       }
+//     ]
+//   ]
+// }
+
+
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "import", {
+        "libraryName": "antd"
+      }
+    ],
+    [
+    	"module-resolver", {
+	      "root": ["."],
+	      "alias": {
+	        "Components": "./Components",
+	        "Templates": "./Templates",
+	        "Styles": "./public/style"
+	      }
+	    }
+    ]
+  ]
+}
+
+// module.exports = {
+//   presets: [['next/babel']],
+//   plugins: [['import', { libraryName: 'antd', style: true }]],
+// };
